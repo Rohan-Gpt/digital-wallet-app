@@ -1,0 +1,29 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@prisma/client": "5.18.0",
+    "@prisma/extension-accelerate": "^1.1.0",
+    "@repo/typescript-config": "workspace:*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "exports": {
+    "./client": "./src/index.ts"
+  },
+  "prisma": {
+    "seed": "pnpm run seed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "prisma": "5.18.0",
+    "ts-node": "^10.9.2"
+  }
+}
